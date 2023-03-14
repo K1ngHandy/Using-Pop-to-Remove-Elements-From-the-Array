@@ -3,10 +3,122 @@
 
 <body>
   <script>
-    /*
-    DIRECTIONS: Below are solutions to all the practice problems for this learning objective.  You can try each solution by copying it into your "index.html" file and clicking "Run". 
+    /* 
+    PROBLEM 1: 
+
+    1. What is the expected output of the code below?
+    2. Use the pop method to remove the last element from the names array 
+       and store the removed element in a variable called removedName.
+    3. What is the value of names after the pop method is called?
+    4. What is the value of removedName after the pop method is called?
+
+    */
+    const names = ["Alice", "Bob", "Charlie", "David"];
+    //ENTER YOUR CODE HERE
+    //Remove the last element from the array using the pop method
+    //and store the removed element in a variable called removedName.
+    const removedName = names.pop();
+    console.log(names); // What is the value of names?
+    console.log(removedName); // What is the value of removedName?
+    
+    // 1. names = ["Alice", "Bob", "Charlie"], removedNames = "David".
+    // 2. See code above
+    // 3. ["Alice", "Bob", "Charlie"].
+    // 4. "David".
+     
+    /* 
+    PROBLEM 2: 
+
+    1. What is the expected output of the code below?
+    2. What is the initial value of the numbers array?
+    3. Use the pop method to remove all elements from the numbers array, 
+       and print the array after each pop operation.
+
+    */
+    const numbers = [1, 2, 3, 4, 5];
+
+    // Use the pop method to remove all elements from the array.
+    // Print the array after each pop operation.
+    //ENTER YOUR CODE HERE
+    numbers.pop(); // pop the last element
+    console.log(numbers);
+    numbers.pop(); // pop the last element
+    console.log(numbers);
+    numbers.pop(); // pop the last element
+    console.log(numbers);
+    numbers.pop(); // pop the last element
+    console.log(numbers);
+    numbers.pop(); // pop the last element
+    console.log(numbers);
+    
+    // 1. [].
+    // 2. [1, 2, 3, 4, 5].
+    // 3. [1, 2, 3, 4], [1, 2, 3], [1, 2], [1], [].
+
+     /* 
+    PROBLEM 3: 
+
+    1. What is the expected output of the code below?
+    2. What is the initial value of the animals array?
+    3. Use the pop and shift methods to remove the first 
+       and last elements of the animals array and store them in variables called first and last, respectively.
+    4. What is the value of first and last after the pop and shift methods are called?
+
+    */
+   const animals = ["dog", "cat", "fish", "bird"];
+
+   // Use the pop and shift methods to remove the first and last elements
+   // of the array and store them in variables called first and last.
+   //ENTER YOUR CODE HERE
+    const first = animals.shift();
+    const last = animals.pop();
+
+   console.log(animals); // What is the value of animals?
+   console.log(first); // What is the value of first?
+   console.log(last); // What is the value of last?
+
+    // 1. ["cat", "fish"].
+    // 2. ["dog", "cat", "fish", "bird"].
+    // 3. See code above.
+    // 4. "dog", "bird".
+
+    /* 
+    PROBLEM 4: 
+
+    You are given an array of numbers. Write a function called popLastTwo 
+    that removes the last two elements of the array using the pop() method 
+    and returns an array containing those two elements in the order they were removed.
+
+    */
+    const nums = [1, 2, 3, 4, 5, 6];
+
+    function popLastTwo(arr) {
+      // Your code here
+      const lastTwo = [];
+      lastTwo.push(arr.pop());
+      lastTwo.push(arr.pop());
+      return lastTwo;
+    }
+
+    console.log(popLastTwo(nums)); // should log [6, 5]
+    console.log(nums); // should log [1, 2, 3, 4]
+
+
+    /* 
+    PROBLEM 5 (DEBUGGING): 
+
+    The following code is supposed to remove the last element of an array 
+    and log the remaining array to the console, but there seems to be a bug. 
+    Find and fix the bug.
+
     */
 
+    const letters = ['a', 'b', 'c', 'd'];
+
+    letters.pop(); // Do not store the removed element in a variable
+
+    console.log(remainingLetters); // log the remaining letters to the console
+    
   </script> 
  
 </body>
