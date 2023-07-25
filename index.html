@@ -11,24 +11,35 @@
     and store it in a variable called removedName.
     */
     const names = ["Alice", "Bob", "Charlie", "David"];
-    //ENTER YOUR CODE HERE
+    const removedName = names.pop();
     console.log(names); 
-    console.log(removedName);
+    console.log('removed name: ', removedName);
     
     /* 
     PROBLEM 2: Use the pop method to remove all elements from the numbers array.
     Print the array after each pop operation.
     */
     const numbers = [1, 2, 3, 4, 5];
-    //ENTER YOUR CODE HERE
+    numbers.pop(); // remove last item
+    console.log(numbers);
+    numbers.pop(); // remove last item
+    console.log(numbers);
+    numbers.pop(); // remove last item
+    console.log(numbers);
+    numbers.pop(); // remove last item
+    console.log(numbers);
+    numbers.pop(); // remove last item
+    console.log(numbers);
     
-     /* 
+    /*
     PROBLEM 3: Use the pop and shift methods to remove the first and last elements.
     Store the removed elements in variables called first and last.
     Console log the array, first, and last.
     */
    const animals = ["dog", "cat", "fish", "bird"];
-   //ENTER YOUR CODE HERE
+    animals.pop();
+    animals.shift();
+    console.log(animals);
 
     /* 
     PROBLEM 4: You are given an array of numbers.
@@ -38,8 +49,11 @@
     const nums = [1, 2, 3, 4, 5, 6];
 
     function popLastTwo(arr) {
-      //ENTER YOUR CODE HERE
-    }
+      arr.pop();
+      arr.pop();
+      const newArr = arr.pop();
+      console.log(newArr, 'newArr');
+    } // need to modify
 
     console.log(popLastTwo(nums)); // should log [6, 5]
     console.log(nums); // should log [1, 2, 3, 4]
@@ -50,15 +64,12 @@
     However, it is not working.  Please fix the code so that it works as expected.
     */
 
-    /*
-
     const letters = ['a', 'b', 'c', 'd'];
 
-    const remainingLetters = letters.pop;
+    const remainingLetters = letters.pop(); // missing parentheses
 
     console.log(letters);
 
-    */
     
   </script> 
   <section style="border: 2px solid blue; border-radius: 5px; padding: 10px; box-shadow: 5px 3px 3px orange; margin-top: 20px;">
