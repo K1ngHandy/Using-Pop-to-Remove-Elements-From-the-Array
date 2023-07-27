@@ -29,7 +29,7 @@
     numbers.pop(); // remove last item
     console.log(numbers);
     numbers.pop(); // remove last item
-    console.log(numbers);
+    console.log('numbers', numbers);
     
     /*
     PROBLEM 3: Use the pop and shift methods to remove the first and last elements.
@@ -39,7 +39,7 @@
    const animals = ["dog", "cat", "fish", "bird"];
     animals.pop();
     animals.shift();
-    console.log(animals);
+    console.log('animals', animals);
 
     /* 
     PROBLEM 4: You are given an array of numbers.
@@ -49,14 +49,14 @@
     const nums = [1, 2, 3, 4, 5, 6];
 
     function popLastTwo(arr) {
-      arr.pop();
-      arr.pop();
-      const newArr = arr.pop();
-      console.log(newArr, 'newArr');
-    } // need to modify
+      const newArr = []; // empty array
+      newArr.push(arr.pop()); // push element to new array
+      newArr.push(arr.pop()); // push element to new array
+      return newArr;
+    }
 
-    console.log(popLastTwo(nums)); // should log [6, 5]
-    console.log(nums); // should log [1, 2, 3, 4]
+    console.log('last 2', popLastTwo(nums)); // should log [6, 5]
+    console.log('nums', nums); // should log [1, 2, 3, 4]
 
 
     /* 
